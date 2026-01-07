@@ -3,8 +3,9 @@
 layout: home
 
 hero:
-  name: "Documentation for neocmakelsp"
-  text: "CMake LSP implementation based on Tower and Tree-sitter"
+  name: neocmakelsp
+  text: Another CMake LSP
+  tagline: CMake LSP implementation based on tower and tree-sitter
   actions:
     - theme: brand
       text: Installation
