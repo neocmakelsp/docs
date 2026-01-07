@@ -15,6 +15,10 @@ hero:
       link: https://github.com/neocmakelsp/neocmakelsp
 
 features:
+  - title: Autocompletion
+    details: neocmakelsp provides intelligent code completion
+    icon: ⚡
   - title: Formatting
-    details: neocmakelsp supports a builtin and external code formatters
+    details: neocmakelsp has support for external code formatters
+    icon: ✨
 ---
