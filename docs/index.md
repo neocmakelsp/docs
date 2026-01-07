@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Installation
-      link: "/install"
+      link: "/installation"
     - theme: alt
       text: Github
       link: https://github.com/neocmakelsp/neocmakelsp
