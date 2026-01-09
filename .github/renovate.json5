@@ -3,4 +3,8 @@
         "config:recommended",
         ":automergeMinor",
     ],
+
+    lockFileMaintenance: {
+        enabled: true,
+    },
 }
