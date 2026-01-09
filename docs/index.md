@@ -11,6 +11,9 @@ hero:
       text: Installation
       link: "/installation"
     - theme: alt
+      text: Reference
+      link: "/config"
+    - theme: alt
       text: Github
       link: https://github.com/neocmakelsp/neocmakelsp
 
