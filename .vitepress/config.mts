@@ -5,7 +5,7 @@ export default defineConfig({
   srcDir: "docs",
   base: "/docs/",
 
-  title: "Neocmakelsp Documentation",
+  title: "Neocmakelsp",
   description: "",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
