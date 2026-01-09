@@ -19,10 +19,10 @@ hero:
 
 features:
   - title: Autocompletion
-    details: neocmakelsp provides intelligent code completion
+    details: Provides intelligent code completion
     icon: ⚡
   - title: Formatting
-    details: neocmakelsp has support for external code formatters
+    details: Support for external code formatters
     icon: ✨
 ---
 
