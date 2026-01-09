@@ -20,6 +20,12 @@ export default defineConfig({
           { text: 'Installation', link: '/installation' },
           { text: 'Editors', link: '/editors' }
         ]
+      },
+      {
+        text: 'Reference',
+        items: [
+          { text: 'Config', link: '/config' }
+        ]
       }
     ],
 
