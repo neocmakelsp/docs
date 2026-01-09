@@ -1,5 +1,17 @@
 # Configuration Reference
 
+The configuration file can either be named `.neocmake.toml` or
+`.neocmakelint.toml` and is resolved in the current project directory.
+If neither is found, a user configuration file in `$XDG_CONFIG_DIR/neocmakelsp`
+either named `config.toml` or `lint.toml` can be used.
+
+::: info
+
+Only a single configuration file will be used. The first file found in the
+order described above will be used.
+
+:::
+
 ## Top-Level Configuration
 
 ### `command_upcase`
