@@ -1,0 +1,35 @@
+---
+name: Lint Commits
+
+permissions: {}
+
+on:
+  push:
+    branches: ["master"]
+  pull_request: {}
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+env:
+  CLICOLOR: 1
+
+jobs:
+  committed:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install committed
+        uses: taiki-e/install-action@2e9d707ef49c9b094d45955b60c7e5c0dfedeb14 # v2.66.5
+        with:
+          tool: committed
+      - name: Lint commits
+        run: committed ${BASE_SHA}..${HEAD_SHA}
+        env:
+          BASE_SHA: ${{ github.event.push.before || github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.push.after || github.event.pull_request.head.sha }}

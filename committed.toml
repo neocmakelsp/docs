@@ -1,0 +1,14 @@
+style = "conventional"
+ignore_author_re = "renovate"
+subject_capitalized = false
+allowed_types = [
+  "chore",
+  "ci",
+  "docs",
+  "feat",
+  "fix",
+  "perf",
+  "refactor",
+  "style",
+  "test",
+]
