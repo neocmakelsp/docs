@@ -5,6 +5,12 @@ The configuration file can either be named `.neocmake.toml` or
 If neither is found, a user configuration file in `$XDG_CONFIG_DIR/neocmakelsp`
 either named `config.toml` or `lint.toml` can be used.
 
+::: warning
+
+This document describes the configuration of the latest git version of `neocmakelsp`.
+
+:::
+
 ::: info
 
 Only a single configuration file will be used. The first file found in the
@@ -14,19 +20,18 @@ order described above will be used.
 
 ## Top-Level Configuration
 
-### `command_upcase`
+### `command_case`
 
 - **Type:** String
 - **Description:** Enable linting of consistency in command casing.
 - **Valid values**:
-  - `"ignore"`: Do not check command casing.
-  - `"upcase"`: Commands must be uppercase.
-  - `"lowercase"`: Commands must be lowercase.
-- **Default:** `"ignore"`
+  - `"upper_case"`: Commands must be uppercase.
+  - `"lower_case"`: Commands must be lowercase.
+- **Default:** Unset
 - **Example:**
 
 ```toml
-# Lint lowercase commands.
+# Check that commands are lowercase.
 command_upcase = "upcase"
 ```
 
