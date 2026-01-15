@@ -25,7 +25,7 @@ require any additional setup.
 
 Add the following to your Emacs configuration:
 
-```emlisp
+```elisp
 (use-package cmake-ts-mode
   :config
   (add-hook 'cmake-ts-mode-hook
