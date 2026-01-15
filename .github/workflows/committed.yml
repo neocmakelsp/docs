@@ -4,8 +4,6 @@ name: Lint Commits
 permissions: {}
 
 on:
-  push:
-    branches: ["master"]
   pull_request: {}
 
 concurrency:
@@ -31,5 +29,5 @@ jobs:
       - name: Lint commits
         run: committed ${BASE_SHA}..${HEAD_SHA}
         env:
-          BASE_SHA: ${{ github.event.push.before || github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.push.after || github.event.pull_request.head.sha }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
