@@ -39,7 +39,7 @@ brew install neocmakelsp
 apk add neocmakelsp
 ```
 
-Completions for `bash`, `fish` and `zsh` are package separately available:
+Completions for `bash`, `fish` and `zsh` are packaged separately:
 
 ```sh
 apk add neocmakelsp-bash-completion
