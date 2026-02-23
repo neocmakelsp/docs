@@ -23,7 +23,7 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
       - name: Install committed
-        uses: taiki-e/install-action@f92912fad184299a31e22ad070a5059fd07d4f59 # v2.68.7
+        uses: taiki-e/install-action@cfdb446e391c69574ebc316dfb7d7849ec12b940 # v2.68.8
         with:
           tool: committed
       - name: Lint commits
