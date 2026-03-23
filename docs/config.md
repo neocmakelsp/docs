@@ -72,6 +72,7 @@ line_words_max = 100
 [format]
 # Format with an external formatter.
 program = "gersemi"
+args = ["-"]
 ```
 
 ### `args`
@@ -85,5 +86,5 @@ program = "gersemi"
 [format]
 program = "gersemi"
 # Use two space indentation.
-args = ["--indent", "2"]
+args = ["-", "--indent", "2"]
 ```
