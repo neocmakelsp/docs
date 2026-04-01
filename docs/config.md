@@ -93,5 +93,5 @@ args = ["-"]
 [format]
 program = "gersemi"
 # Use two space indentation.
-args = ["-", "--indent", "2"]
+args = ["--indent", "2", "-"]
 ```
