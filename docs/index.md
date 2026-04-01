@@ -25,10 +25,3 @@ features:
     details: Support for external code formatters
     icon: ✨
 ---
-
-::: danger :construction:
-
-This Site Is Under Construction. If you want to contribute, you can find the
-repository by clicking the `Github` button above.
-
-:::
