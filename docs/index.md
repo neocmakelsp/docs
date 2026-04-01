@@ -25,6 +25,6 @@ features:
     details: Support for external code formatters
     icon: ✨
   - title: Definition
-    details: Find symbol defintions in external files and modules
+    details: Find symbol definitions in external files and modules
     icon: 𝜏
 ---
