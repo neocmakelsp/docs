@@ -20,6 +20,13 @@ order described above will be used.
 
 ## Top-Level Configuration
 
+::: warning
+
+The builtin formatter is currently not configurable. The configuration settings
+listed below only influence the linting behavior.
+
+:::
+
 ### `command_case`
 
 - **Type:** String
