@@ -1,0 +1,13 @@
+[
+  {
+    "type": "section-header",
+    "label": "Documentation"
+  },
+  "installation",
+  "editors",
+  {
+    "type": "section-header",
+    "label": "Reference"
+  },
+  "config"
+]

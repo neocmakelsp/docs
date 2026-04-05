@@ -1,6 +1,7 @@
 # Documentation Site
 
-This repository contains the source code for our documentation site, built with [VitePress](https://vitepress.dev/).
+This repository contains the source code for our documentation site, built with
+[`rspress`](https://rspress.dev).
 
 ## Prerequisites
 
@@ -19,17 +20,17 @@ Follow these steps to run the documentation locally on your machine.
 2. **Start the development server**
 
    ```bash
-   bun run docs:dev
+   bun run dev
    ```
 
-   The site should now be running at `http://localhost:5173`.
+   The site should now be running at `http://localhost:3000`.
 
 3. **Build for production**
    To preview the production build locally:
 
    ```bash
-   bun run docs:build
-   bun run docs:preview
+   bun run build
+   bun run preview
    ```
 
 ## Adding Content
@@ -37,11 +38,12 @@ Follow these steps to run the documentation locally on your machine.
 ### Adding a New Page
 
 1. **Create the file**: Add a new Markdown file in the `docs` directory.
-   - Example: `docs/guides/my-new-feature.md`
+   - Example: `docs/my-new-feature.md`
 
-2. **Add content**: Write your documentation using standard Markdown. You can also use VitePress-specific features like custom containers and Vue components.
+2. **Add content**: Write your documentation using standard Markdown. You can
+also use MDX-specific features like custom containers and `rspress` components.
 
-   ```markdown
+   ```mdx
    # My New Feature
 
    This is the documentation for the new feature.
@@ -49,58 +51,23 @@ Follow these steps to run the documentation locally on your machine.
 
 ### Adding to the Sidebar
 
-To make your new page visible in the sidebar navigation, you need to update the VitePress configuration.
+To make your new page visible in the sidebar navigation, you need to add a meta
+entry.
 
-1. Open the config file at `.vitepress/config.mts`.
-2. Locate the `themeConfig.sidebar` object.
-3. Add your new page to an existing section, or create a new section.
+1. Open or create a file `_meta.json` next to the markdown file.
+2. Add the page name to the list of pages.
 
-**Example: Adding a page to an existing section**
+#### Example: Adding a Page to an Existing Section
 
-```typescript
-// .vitepress/config.mts
-export default defineConfig({
-  themeConfig: {
-    sidebar: [
-      {
-        text: 'Guides',
-        items: [
-          { text: 'Getting Started', link: '/guides/getting-started' },
-          // Add your new page here:
-          { text: 'My New Feature', link: '/guides/my-new-feature' } 
-        ]
-      }
-    ]
-  }
-})
+```json
+// docs/_meta.json
+["installation", ..., "my-new-feature"]
 ```
 
-**Example: Adding a completely new section**
-
-```typescript
-// .vitepress/config.mts
-export default defineConfig({
-  themeConfig: {
-    sidebar: [
-      {
-        text: 'Guides',
-        items: [
-          { text: 'Getting Started', link: '/guides/getting-started' }
-        ]
-      },
-      // New Section
-      {
-        text: 'API Reference',
-        items: [
-          { text: 'Endpoints', link: '/api/endpoints' },
-          { text: 'Authentication', link: '/api/auth' }
-        ]
-      }
-    ]
-  }
-})
-```
+For a more complete guide see the [routing guide](https://rspress.rs/guide/basic/conventional-route)
+in the `rspress` documentation.
 
 ## Deployment
 
-This repository is configured to build automatically. Merging to the `master` branch will trigger a deployment.
+This repository is configured to build automatically. Merging to the `master`
+branch will trigger a deployment.

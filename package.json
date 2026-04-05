@@ -1,11 +1,12 @@
 {
+  "type": "module",
   "dependencies": {},
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.17"
+    "@rspress/core": "^2.0.8"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
   }
 }
