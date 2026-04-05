@@ -59,9 +59,9 @@ entry.
 
 #### Example: Adding a Page to an Existing Section
 
-```json
+```json5
 // docs/_meta.json
-["installation", ..., "my-new-feature"]
+["installation", "...", "my-new-feature"]
 ```
 
 For a more complete guide see the [routing guide](https://rspress.rs/guide/basic/conventional-route)
