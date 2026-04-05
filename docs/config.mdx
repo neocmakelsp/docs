@@ -1,4 +1,4 @@
-# Configuration Reference
+# Configuration
 
 The configuration file can either be named `.neocmake.toml` or
 `.neocmakelint.toml` and is resolved in the current project directory.
@@ -37,7 +37,7 @@ listed below only influence the linting behavior.
 - **Default:** Unset
 - **Example:**
 
-```toml
+```toml title=".neocmake.toml"
 # Check that commands are lowercase.
 command_upcase = "upcase"
 ```
@@ -49,7 +49,7 @@ command_upcase = "upcase"
 - **Default:** `false`
 - **Example:**
 
-```toml
+```toml title=".neocmake.toml"
 # Run `cmake-lint` as part of the linting process.
 enable_external_cmake_lint = true
 ```
@@ -61,7 +61,7 @@ enable_external_cmake_lint = true
 - **Default:** `80`
 - **Example:**
 
-```toml
+```toml title=".neocmake.toml"
 # Set maximum line length to 100 characters.
 line_words_max = 100
 ```
@@ -75,7 +75,7 @@ line_words_max = 100
 - **Default:** Unset
 - **Example:**
 
-```toml
+```toml title=".neocmake.toml"
 [format]
 # Format with an external formatter.
 program = "gersemi"
@@ -89,7 +89,7 @@ args = ["-"]
 - **Default:** Unset
 - **Example:**
 
-```toml
+```toml title=".neocmake.toml"
 [format]
 program = "gersemi"
 # Use two space indentation.
