@@ -5,7 +5,7 @@ This repository contains the source code for our documentation site, built with
 
 ## Prerequisites
 
-- [Bun](https://bun.sh/) (v1.0 or higher)
+- [`deno`](https://deno.land/)
 
 ## Local Development
 
@@ -14,13 +14,13 @@ Follow these steps to run the documentation locally on your machine.
 1. **Install dependencies**
 
    ```bash
-   bun install
+   deno install
    ```
 
 2. **Start the development server**
 
    ```bash
-   bun run dev
+   deno run dev
    ```
 
    The site should now be running at `http://localhost:3000`.
@@ -29,8 +29,8 @@ Follow these steps to run the documentation locally on your machine.
    To preview the production build locally:
 
    ```bash
-   bun run build
-   bun run preview
+   deno run build
+   deno run preview
    ```
 
 ## Adding Content
