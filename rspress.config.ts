@@ -8,6 +8,10 @@ export default defineConfig({
     enableAppearanceAnimation: true,
     enableContentAnimation: true,
     enableScrollToTop: true,
+    lastUpdated: true,
+    editLink: {
+      docRepoBaseUrl: 'https://github.com/neocmakelsp/docs/blob/master/docs/',
+    },
     socialLinks: [
       {
         icon: 'github',
