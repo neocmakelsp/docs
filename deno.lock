@@ -69,15 +69,15 @@
         "@tybys/wasm-util"
       ]
     },
-    "@rsbuild/core@2.0.14": {
-      "integrity": "sha512-SSPer6vM+v82CV6JXIOzyyT++A1ECgsVvvUuveD5rfGxX/W58vWGnB+zWcYbMfYOjTntD+9ve6QGGh6kBjPx6A==",
+    "@rsbuild/core@2.0.15": {
+      "integrity": "sha512-O8vmMhZu1YImO6jOqt/K/vlJSvkq7UtSq5YM1DIlcEd9LW8Gf6/dkQ1B2KPI6F+hSMFBnTTTumdcIowSLCw97g==",
       "dependencies": [
         "@rspack/core",
         "@swc/helpers"
       ],
       "bin": true
     },
-    "@rsbuild/plugin-react@2.0.1_@rsbuild+core@2.0.14": {
+    "@rsbuild/plugin-react@2.0.1_@rsbuild+core@2.0.15": {
       "integrity": "sha512-n5m3VxEm6m3Dv1VkI0WnxsildySJ6M+QjGIzkZDy5UebRCIJ1Q/hlQVyhofBL6C+AcsF9fGjlHQkeiteXJSr3Q==",
       "dependencies": [
         "@rsbuild/core",
@@ -1317,16 +1317,16 @@
         "react-reconciler"
       ]
     },
-    "react-router-dom@7.17.0_react@19.2.7_react-dom@19.2.7__react@19.2.7": {
-      "integrity": "sha512-fyU2yjGups/hE6Xz0I5ZYbVL8Gx29eCjgpHaRaTaVU+OOAdfRX05KsvyRm0GO8YQwOkhpU3MurW1jyMUJn+zSw==",
+    "react-router-dom@7.18.0_react@19.2.7_react-dom@19.2.7__react@19.2.7": {
+      "integrity": "sha512-Fi0yY6kgtKae/Th2xibdWK0KSdYZ4B53Gyf6wRtomOKWgpNm7H7+DyfDhncdz9FKbpS+1jmDhg3F4WoGJ+yFOA==",
       "dependencies": [
         "react",
         "react-dom",
         "react-router"
       ]
     },
-    "react-router@7.17.0_react@19.2.7_react-dom@19.2.7__react@19.2.7": {
-      "integrity": "sha512-FDELK7rTMlCHO5+reyXsPlmfr7N1F91lPHsWYfMEGQm/KQ+F4JFM8jGoeQDmDvdTs93Fw9aSilH+uKRb4/jXvQ==",
+    "react-router@7.18.0_react@19.2.7_react-dom@19.2.7__react@19.2.7": {
+      "integrity": "sha512-pTTGt8J+ji1NOmYnjzT+bAJy/1zD+Jp4ziO6cL7T3ZLvXKtusO7BpFqlRXitqpcPVqllsIXFHRMt+2/k3Xn6HQ==",
       "dependencies": [
         "cookie",
         "react",
@@ -1419,16 +1419,16 @@
         "hast-util-to-estree"
       ]
     },
-    "remark-cjk-friendly-gfm-strikethrough@2.1.0_unified@11.0.5_micromark@4.0.2": {
-      "integrity": "sha512-3Kyq2hjY7V7eU8MbVbWW6QQLN81pjJcIvKHvPxr8hZZmcq/9wqm3MJ3iUG34Ch9QTM4WHN+a1JVAVC1fSi5mig==",
+    "remark-cjk-friendly-gfm-strikethrough@2.3.1_unified@11.0.5_micromark@4.0.2": {
+      "integrity": "sha512-JE3TGgouk/sy92SemNMEUhO5mNP4on04cmzOV3s3R5Dbk160ewmpM4tgPiinKKvoJ5UW2fTu7FOYsjVbusSA9w==",
       "dependencies": [
         "mdast-util-to-markdown-cjk-friendly-gfm-strikethrough",
         "micromark-extension-cjk-friendly-gfm-strikethrough",
         "unified"
       ]
     },
-    "remark-cjk-friendly@2.1.0_unified@11.0.5_micromark@4.0.2": {
-      "integrity": "sha512-ZWGDfTJNLEZ1gap+pd33K13ZhRAWgVDqxKA7JIlBs5IDu+qvbiWl/pEbeuxzRrWyrrkeFFoTnvNw00iW9mBcow==",
+    "remark-cjk-friendly@2.3.1_unified@11.0.5_micromark@4.0.2": {
+      "integrity": "sha512-f+pKZRxCRwNEGFBKNRAZAqU91GIK1SAo3ZyFHWRUgC9zcxRR0BXKd6YwqgSsxtW0rNpUDtONj7H5nje2WL3fcA==",
       "dependencies": [
         "mdast-util-to-markdown-cjk-friendly",
         "micromark-extension-cjk-friendly",
