@@ -1,9 +1,10 @@
 # Configuration
 
-The configuration file can either be named `.neocmake.toml` or
-`.neocmakelint.toml` and is resolved in the current project directory.
-If neither is found, a user configuration file in `$XDG_CONFIG_DIR/neocmakelsp`
-either named `config.toml` or `lint.toml` can be used.
+The configuration file can either be named `.neocmake.toml` or `.neocmakelint.toml` and is resolved in the current project directory. If neither is found, a user configuration file named `config.toml` or `lint.toml` can be used. The location of this user configuration file differs across different operating systems:
+
+- Linux: `$XDG_CONFIG_HOME/neocmakelsp/config.toml or $HOME/.config/neocmakelsp/config.toml`
+- macOS: `$HOME/Library/Application Support/neocmakelsp/config.toml`
+- Windows: `{FOLDERID_RoamingAppData}/neocmakelsp/config.toml`
 
 ::: warning
 
